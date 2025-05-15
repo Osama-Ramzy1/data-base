@@ -1,0 +1,31 @@
+CREATE TABLE Student (
+    StudentID INT PRIMARY KEY,
+    FirstName VARCHAR(50),
+    Age INT,
+    EnrollDate DATE,
+    Role VARCHAR(20),
+    Email VARCHAR(100)
+);
+
+CREATE TABLE Course (
+    CourseID INT PRIMARY KEY,
+    Title VARCHAR(100),
+    Author VARCHAR(100)
+);
+
+CREATE TABLE Admin (
+    AdminID INT PRIMARY KEY,
+    FirstName VARCHAR(50),
+    Role VARCHAR(20),
+    Email VARCHAR(100)
+);
+
+CREATE TABLE Enrollment (
+    StudentID INT,
+    CourseID INT,
+    EnrollmentDate DATE,
+    CompletionDate DATE,
+    PRIMARY KEY(StudentID, CourseID),
+    FOREIGN KEY(StudentID) REFERENCES Student(StudentID),
+    FOREIGN KEY(CourseID) REFERENCES Course(CourseID)
+);

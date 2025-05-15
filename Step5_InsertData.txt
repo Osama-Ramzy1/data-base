@@ -1,0 +1,34 @@
+ Insert Students
+INSERT INTO Student VALUES (1, 'Ahmed', 21, '2023-01-10', 'Student', 'ahmed@example.com');
+INSERT INTO Student VALUES (2, 'Salma', 22, '2023-02-11', 'Student', 'salma@example.com');
+INSERT INTO Student VALUES (3, 'Omar', 23, '2023-03-12', 'Student', 'omar@example.com');
+INSERT INTO Student VALUES (4, 'Laila', 24, '2023-04-13', 'Student', 'laila@example.com');
+INSERT INTO Student VALUES (5, 'Mona', 25, '2023-05-14', 'Student', 'mona@example.com');
+INSERT INTO Student VALUES (6, 'Ziad', 20, '2023-06-15', 'Student', 'ziad@example.com');
+INSERT INTO Student VALUES (7, 'Nada', 21, '2023-07-16', 'Student', 'nada@example.com');
+INSERT INTO Student VALUES (8, 'Youssef', 22, '2023-08-17', 'Student', 'youssef@example.com');
+INSERT INTO Student VALUES (9, 'Sara', 23, '2023-09-18', 'Student', 'sara@example.com');
+INSERT INTO Student VALUES (10, 'Kareem', 24, '2023-10-19', 'Student', 'kareem@example.com');
+
+ Insert Courses
+INSERT INTO Course VALUES (101, 'Database Systems', 'Dr. Ayman');
+INSERT INTO Course VALUES (102, 'Operating Systems', 'Dr. Mona');
+INSERT INTO Course VALUES (103, 'Networking Basics', 'Dr. Ali');
+INSERT INTO Course VALUES (104, 'Web Development', 'Dr. Laila');
+INSERT INTO Course VALUES (105, 'Data Structures', 'Dr. Sami');
+
+ Insert Admins
+INSERT INTO Admin VALUES (201, 'Admin1', 'Admin', 'admin1@example.com');
+INSERT INTO Admin VALUES (202, 'Admin2', 'Admin', 'admin2@example.com');
+
+ Insert Enrollments
+INSERT INTO Enrollment VALUES (1, 101, '2023-01-15', '2023-04-15');
+INSERT INTO Enrollment VALUES (2, 102, '2023-02-20', '2023-05-20');
+INSERT INTO Enrollment VALUES (3, 103, '2023-03-10', '2023-06-10');
+INSERT INTO Enrollment VALUES (4, 104, '2023-04-05', '2023-07-05');
+INSERT INTO Enrollment VALUES (5, 105, '2023-05-01', '2023-08-01');
+INSERT INTO Enrollment VALUES (6, 101, '2023-06-10', '2023-09-10');
+INSERT INTO Enrollment VALUES (7, 102, '2023-07-12', '2023-10-12');
+INSERT INTO Enrollment VALUES (8, 103, '2023-08-15', '2023-11-15');
+INSERT INTO Enrollment VALUES (9, 104, '2023-09-18', '2023-12-18');
+INSERT INTO Enrollment VALUES (10, 105, '2023-10-20', '2024-01-20');

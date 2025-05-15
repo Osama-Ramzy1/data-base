@@ -1,0 +1,20 @@
+1)Get all students
+SELECT * FROM Student;
+
+2)List all courses with their authors
+SELECT Title, Author FROM Course;
+
+3)Show enrollment details
+SELECT s.FirstName, c.Title, e.EnrollmentDate, e.CompletionDate
+FROM Enrollment e
+JOIN Student s ON e.StudentID = s.StudentID
+JOIN Course c ON e.CourseID = c.CourseID;
+
+4)Count of students per course
+SELECT c.Title, COUNT(e.StudentID) AS EnrolledStudents
+FROM Course c
+JOIN Enrollment e ON c.CourseID = e.CourseID
+GROUP BY c.Title;
+
+5)List students who enrolled after June 2023
+SELECT FirstName FROM Student WHERE EnrollDate > '2023-06-01';
